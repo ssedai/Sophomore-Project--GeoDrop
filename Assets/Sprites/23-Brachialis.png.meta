@@ -1,0 +1,87 @@
+fileFormatVersion: 2
+guid: 25c16f9a0fa63a041852ee26ffd91cec
+timeCreated: 1473366778
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 23-Brachialis_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 23-Brachialis_0
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2361
+        width: 481
+        height: 1510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.39258, y: -15.473267}
+        - {x: 63.39258, y: 46.526733}
+        - {x: 58.39258, y: 90.52673}
+        - {x: 31.392578, y: 183.52673}
+        - {x: 30.392578, y: 253.52673}
+        - {x: 22.392578, y: 254.52673}
+        - {x: -7.607422, y: 254.52673}
+        - {x: -52.60742, y: 109.52673}
+        - {x: -62.60742, y: 51.526733}
+        - {x: -67.60742, y: -39.473267}
+        - {x: -67.60742, y: -106.47327}
+        - {x: -61.60742, y: -158.47327}
+        - {x: -47.60742, y: -232.47327}
+        - {x: -42.60742, y: -235.47327}
+        - {x: -35.60742, y: -235.47327}
+        - {x: -12.607422, y: -218.47327}
+        - {x: 41.39258, y: -126.47327}
+        - {x: 62.39258, y: -46.473267}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
