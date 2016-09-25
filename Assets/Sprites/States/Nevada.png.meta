@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 2055ecb9bdb35144991fc3e990ed5658
-timeCreated: 1473366248
+guid: 3ab2de5678b21db47b502d1e27ec04bd
+timeCreated: 1474739406
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Nevada_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,18 +39,41 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Nevada_0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 147
+        width: 176
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88, y: 104}
+        - {x: 82, y: 113}
+        - {x: -19, y: 127}
+        - {x: -50, y: 135}
+        - {x: -62, y: 135}
+        - {x: -87, y: 45}
+        - {x: -87, y: 27}
+        - {x: 21, y: -135}
+        - {x: 34, y: -135}
+        - {x: 54, y: -101}
+        - {x: 71, y: -7}
+        - {x: 88, y: 55}
     outline: []
   spritePackingTag: 
   userData: 

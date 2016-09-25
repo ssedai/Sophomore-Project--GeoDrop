@@ -17,7 +17,7 @@ public class InstructionsCanvas : MonoBehaviour {
 		//instCanvas = GameObject.FindGameObjectWithTag ("Instructions Panel").GetComponent <Canvas> ();
 		//toggle = GameObject.Find ("Toggle").GetComponent <Toggle> ();
 		lm = FindObjectOfType <LevelManager> ();
-		cam = FindObjectOfType <Magnify> ();
+		//cam = FindObjectOfType <Magnify> ();
 
 		//Display the Instructions canvas
 		ppM = FindObjectOfType <PlayerPrefsManager>();
@@ -31,7 +31,7 @@ public class InstructionsCanvas : MonoBehaviour {
 
 	//Displays the instruction panel
 	public void dispInstPanel(){
-		cam.stopMagnifier ();
+		//cam.stopMagnifier ();
 		instCanvas.gameObject.SetActive (true);
 		lm.sethasStarted (false); //Pauses the timer and disables body parts from being clickable.
 		//Decides whether the "Show Again?" toggle should be checked or unchecked.
@@ -48,7 +48,7 @@ public class InstructionsCanvas : MonoBehaviour {
 		instCanvas.gameObject.SetActive (false);
 		//Resumes the timer and enables body parts to be clickable again.
 		lm.sethasStarted (true);
-		cam.toggleMagnifier ();
+		//cam.toggleMagnifier ();
 	}
 
 	//Toggles the hasRead boolean to true or false.

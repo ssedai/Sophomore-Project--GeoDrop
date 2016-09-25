@@ -44,8 +44,8 @@ public class StatTracking : MonoBehaviour {
 			profi = playerManager.getProf ();
 		
 
-			urlUploadStats = ("https://ilta.oakland.edu/uploadstatTracking.php?Name=" + userName + "&Privatekey=j5G1L23" + "&Display=" + displayName + "&Expertise=" + profi + "&level=" + levelName); //Backup Server
-			//urlUploadStats = ("http://goeteeks.x10host.com/Tutorial/uploadstatTracking.php?Name=" + userName + "&Privatekey=j5G1L23" + "&Display=" + displayName + "&Expertise=" + profi + "&level=" + levelName); //Backup Server
+			urlUploadStats = ("https://secs.oakland.edu/~nferman/uploadstatTracking.php?Name=" + userName + "&Privatekey=j5G1L23@#" + "&Display=" + displayName + "&Expertise=" + profi + "&level=" + levelName); //Main Server
+
 		}
 	}
 	

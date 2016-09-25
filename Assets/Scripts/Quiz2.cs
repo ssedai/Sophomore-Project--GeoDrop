@@ -22,7 +22,6 @@ public class Quiz2 : MonoBehaviour {
 	private Button hint;
 	private int myGuess = 0;
 	private bool myHint = false;
-	private bool correctFirstTry = true;
 
 	//Setting up point value constants.
 	//This is the value for the threshold of each scoring tier.
@@ -194,10 +193,10 @@ public class Quiz2 : MonoBehaviour {
 			nQuestion.gameObject.SetActive (true); //...By Next Question Button.
 			hint.gameObject.SetActive (false);  //hint button disables if question is answered correctly.
 			corInc.text = "That's The Way!";
-			levelManager.addMuscPlaced ();
+			levelManager.addobjPlaced ();
 			rs.reportSelf ();
-			if (correctFirstTry)
-				levelManager.testScoreAddition ();
+
+
 
 			//Evaluates the number of guesses and gives points accordingly.
 			if (myGuess <= THRESH0) {
@@ -217,7 +216,7 @@ public class Quiz2 : MonoBehaviour {
 			rs.addGuess();
 			levelManager.attempts++;
 			rs.reportSelf ();
-			correctFirstTry = false;
+
 			if (myHint == false){
 				corInc.text = "That's not what this muscle does!";
 			}
@@ -270,7 +269,7 @@ public class Quiz2 : MonoBehaviour {
 			quizPopup.setCanvas (++q, true);
 			quizPopup.reduceCanvasLength ();
 			quizPopup.nextQuestionN ();
-			correctFirstTry = true;
+
 		} else {
 			transform.parent.tag = "Placed";
 			rs.reportSelf ();
@@ -283,7 +282,7 @@ public class Quiz2 : MonoBehaviour {
 			this.gameObject.SetActive (false);
 			//Reduce the number of objects remaining by one
 			levelManager.startObjects--;
-			levelManager.addMuscPlaced ();
+			levelManager.addobjPlaced ();
 		}
 	}
 }

@@ -4,6 +4,10 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class LevelSelector : MonoBehaviour {
+	/**
+	 * Level Selector makes it so that a canvas displaying level details pops up on the level select scene 
+	*/
+
 
 	//Setting up swappable menus for each part.
 	private Canvas levelPanel;

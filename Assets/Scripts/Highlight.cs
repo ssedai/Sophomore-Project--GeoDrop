@@ -3,7 +3,9 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Highlight : MonoBehaviour {
-
+	/**
+	 *Highlights any object this script is placed on when the mouse hovers over it
+	*/
 	private SelectionCust sc;
 	private SpriteRenderer sr;
 	private Button bu;

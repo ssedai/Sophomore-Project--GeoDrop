@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 2055ecb9bdb35144991fc3e990ed5658
-timeCreated: 1473366248
+guid: 37af194cfeb318345813f795d495e3a0
+timeCreated: 1474739430
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Utah_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,18 +39,42 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Utah_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 185
+        width: 169
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.5, y: 47}
+        - {x: 35.5, y: 80}
+        - {x: 34.5, y: 83}
+        - {x: -41.5, y: 95}
+        - {x: -45.5, y: 92}
+        - {x: -66.5, y: -11}
+        - {x: -75.5, y: -70}
+        - {x: -75.5, y: -86}
+        - {x: 3.5, y: -97}
+        - {x: 67.5, y: -97}
+        - {x: 79.5, y: 24}
+        - {x: 79.5, y: 40}
+        - {x: 73.5, y: 42}
     outline: []
   spritePackingTag: 
   userData: 

@@ -21,7 +21,6 @@ public class Quiz1 : MonoBehaviour {
 	private Button hint;
 	private int myGuess = 0;
 	private bool myHint = false;
-	private bool correctFirstTry = true;
 
 
 
@@ -123,76 +122,16 @@ public class Quiz1 : MonoBehaviour {
 
 	//Sets the question for the level.
 	void setQuestion(){
-		if (statTracking.identifyLevel () == "Q1")
-			question.text = "What is the name of this muscle?";
-		if (statTracking.identifyLevel () == "Q3"){
-			switch(this.name){
-			case "Q0": 
-				question.text = "What is the innervation of this muscle?";
+		switch (this.name) {
+			case "State Name":
+				question.text = "What is the name of this state?";
 				break;
-			case "1-2":
-				question.text = "What is the innnervation of this muscle (1-2)?";
+			case "Capital":
+				question.text = "What is the capital city of " + transform.parent.name + "?";
 				break;
-			case "3-4":
-				question.text = "What is the innervation of this muscle (3-4)?";
-				break;
-			default:
-				break;
-			}
-		}
-		if (statTracking.identifyLevel () == "Q5")
-			question.text = "What is the name of this bone?";
-		if (statTracking.identifyLevel () == "Q6")
-			question.text = "What is the name of this nerve?";
-		if (statTracking.identifyLevel () == "Q7")
-			question.text = "What nerve controls this region?";
-
-		if (statTracking.identifyLevel () == "Q2") {
-			switch (this.name) {
-			case "Proximal":
-				question.text = "What is the PROXIMAL attachment of this muscle?";
-				break;
-			case "Short Head":
-				question.text = "What is the PROXIMAL attachment of the SHORT HEAD of this muscle?";
-				break;
-			case "Long Head":
-				question.text = "What is the PROXIMAL attachment of the LONG HEAD of this muscle?";
-				break;
-			case "Lateral":
-				question.text = "What is the PROXIMAL attachment of the LATERAL HEAD of this muscle?";
-				break;
-			case "Medial":
-				question.text = "What is the PROXIMAL attachment of the MEDIAL HEAD of this muscle?";
-				break;
-			case "Oblique":
-				question.text = "What is the PROXIMAL attachment of the OBLIQUE HEAD of this muscle?";
-				break;
-			case "Transverse":
-				question.text = "What is the PROXIMAL attachment of the TRANSVERSE HEAD of this muscle?";
-				break;
-			case "P1-2":
-				question.text = "What is the PROXIMAL attachment of this muscle (1-2)?";
-				break;
-			case "P3-4":
-				question.text = "What is the PROXIMAL attachment of this muscle (3-4)?";
-				break;
-			case "Distal":
-				question.text = "What is the DISTAL attachment of this muscle?";
-				break;			
 			default:
 				question.text = "I do not have a question set up.  Please report to your teacher.";
 				break;
-			}
-		}
-
-		if (statTracking.levelIdentity == "Q4") {
-			switch (this.name){
-			case "Q0":
-				question.text = "What is the action of this muscle?";
-				break;
-			default:
-				break;
-			}
 		}
 	}
 
@@ -212,10 +151,8 @@ public class Quiz1 : MonoBehaviour {
 			hint.gameObject.SetActive (false); //hint button disables if question is answered correctly.
 			corInc.text = "You Got It!";
 			transform.gameObject.tag = "Placed";
-			levelManager.addMuscPlaced ();
+			levelManager.addobjPlaced ();
 			rs.reportSelf ();
-			if (correctFirstTry)
-				levelManager.testScoreAddition ();
 
 			//Evaluates the number of guesses and gives points accordingly.
 			if (myGuess == THRESH0) {
@@ -235,10 +172,8 @@ public class Quiz1 : MonoBehaviour {
 			myGuess++;
 			if (SceneManager.GetActiveScene ().name != "UpperArm6B") {
 				rs.addGuess ();
-				correctFirstTry = false;
 			} else if (SceneManager.GetActiveScene ().name == "UpperArm6B") {
 				rs.addQguess ();
-				correctFirstTry = false;
 			}
 			levelManager.attempts++;
 			rs.reportSelf ();
@@ -270,10 +205,8 @@ public class Quiz1 : MonoBehaviour {
 			sAnswer.gameObject.SetActive (false);
 			nQuestion.gameObject.SetActive (true);
 			hint.gameObject.SetActive (false);
-			levelManager.addMuscPlaced ();
+			levelManager.addobjPlaced ();
 			rs.reportSelf ();
-			if (correctFirstTry)
-				levelManager.testScoreAddition ();
 
 			//Give points for getting the correct answer.
 			levelManager.score += SCORE1;
@@ -289,10 +222,8 @@ public class Quiz1 : MonoBehaviour {
 			myGuess++;
 			if (SceneManager.GetActiveScene ().name != "UpperArm6B") {
 				rs.addGuess ();
-				correctFirstTry = false;
 			} else if (SceneManager.GetActiveScene ().name == "UpperArm6B") {
 				rs.addQguess ();
-				correctFirstTry = false;
 			}
 			levelManager.attempts++;
 			rs.reportSelf ();
@@ -309,25 +240,14 @@ public class Quiz1 : MonoBehaviour {
 
 	//Changes the dropdown's value to the correct answer.
 	public void giveHint(){
-		if (statTracking.identifyLevel () == "Q1" || statTracking.identifyLevel () == "Q5" || statTracking.identifyLevel () == "Q6") {			
-			corInc.text = "This part is known as:\n" + correctAnswer + ".";
+		if (this.name == "State Name") {			
+			corInc.text = "This state is named:\n" + correctAnswer + ".";
 		}
-		if (statTracking.identifyLevel () == "Q2") {
-			corInc.text = "The " + transform.parent.name + " inserts into this bone:\n" + correctAnswer + ".";
+		if (this.name == "Capital") {
+			corInc.text = "The Capital of " + transform.parent.name + " is\n" + correctAnswer + ".";
 		}
-		if (statTracking.identifyLevel () == "Q3") {
-			corInc.text = "The " + transform.parent.name + " innervates at:\n" + correctAnswer;
-		}
-		if (statTracking.identifyLevel () == "Q4") {
-			corInc.text = "The " + transform.parent.name + " does this:\n" + correctAnswer;
-		}
-		if (statTracking.identifyLevel () == "Q7") {
-			corInc.text = "The region is affected by this nerve:\n" + correctAnswer;
-		}
-		if (statTracking.identifyLevel () == "QC") {
-			corInc.text = "No hints given for comprehension.";
-			return;
-		}
+
+
 		myHint = true;
 		rs.toggleHintTrue();  //Sets this boolean to true for our feedback purposes.
 		rs.reportSelf();
@@ -343,7 +263,6 @@ public class Quiz1 : MonoBehaviour {
 			quizPopup.setCanvas (++q, true);
 			quizPopup.reduceCanvasLength ();
 			quizPopup.nextQuestionN ();
-			correctFirstTry = true;
 		} else {
 			transform.parent.tag = "Placed";
 			rs.reportSelf ();

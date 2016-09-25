@@ -3,26 +3,22 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(PolygonCollider2D))]  //Ensure Object has a Box Collider.
+[RequireComponent(typeof(PolygonCollider2D))]  //Ensure Object has a Polygon Collider.
 public class QuizPopup : MonoBehaviour {
 
 	//Setting up fade setting after question is answered.
-	public float alpha = 0.5f;
-	private SpriteRenderer childSprite;
-	private PolygonCollider2D[] boxCol;
+	public float alpha = 1.0f; //The alpha (visibility) of the sprite
+	private SpriteRenderer childSprite; //The sprite renderer of the object
+	private PolygonCollider2D[] polyCol; //The Collider of the object (To be removed once set in place)
 	public bool isClickable = true;  //Once question is answered, set to false.
-	public bool answered = false;  //Set to true when the question is answered for specific part.
+	public bool answered = false;  //Set to true when the question is answered for.
 
 	//Will need access to LevelManager script!
 	private LevelManager levelManager;
 	//Also the StatTracking script.
 	private StatTracking statTracking;
 
-	//Setting up Stat Tracking
-	//private StatTracking statTracking;
 
-	//Making selectable area easier to select
-	//private SpriteRenderer parentSprite;
 
 	//Setting up Quiz
 	public Canvas[] question; //The Canvas that hosts the question.
@@ -31,7 +27,7 @@ public class QuizPopup : MonoBehaviour {
 
 
 	//Setting up Win Condition
-	private bool bodyPart;
+	private bool piece;
 
 	// Use this for initialization
 	void Start () {
@@ -47,16 +43,16 @@ public class QuizPopup : MonoBehaviour {
 		//statTracking = FindObjectOfType<StatTracking>();
 
 		//parentSprite.color = new Color (1f, 1f, 1f, 1f);
-		boxCol = GetComponents <PolygonCollider2D> ();
+		polyCol = GetComponents <PolygonCollider2D> ();
 
 		//Get number of questions for body part by getting the Length of the array.
 		numQ = question.Length;
 
 		//Count all body parts and questions
-		bodyPart = (this.tag == "unPlaced");
-		if (bodyPart) {
-			levelManager.startObjects++;
-			levelManager.addMuscleCount(numQ);
+		piece = (this.tag == "unPlaced");
+		if (piece) {
+			//levelManager.startObjects++;
+			levelManager.addObjCount(numQ);
 		}
 
 
@@ -78,15 +74,15 @@ public class QuizPopup : MonoBehaviour {
 		if (answered) {
 			setAlpha();
 			//parentSprite.color = new Color (1, 1, 1, 0);
-			for (int n = 0; n < boxCol.Length; n++)
-				boxCol [n].enabled = false;
+			for (int n = 0; n < polyCol.Length; n++)
+				polyCol [n].enabled = false;
 		}
 	}
 
 	void OnMouseUp (){
 		if (levelManager.noObjections == true && isClickable == true && levelManager.gethasStarted () == true) {
-			setCanvas(Qnum, true);
-			isClickable = false;
+			//setCanvas(Qnum, true);
+			//isClickable = false;
 
 		}
 

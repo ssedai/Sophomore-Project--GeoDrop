@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 2055ecb9bdb35144991fc3e990ed5658
-timeCreated: 1473366248
+guid: 7891b6c87efac60459dd869771a7611d
+timeCreated: 1473472121
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: California_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,18 +39,47 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: California_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 93
+        width: 225
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 58}
+        - {x: 17.5, y: 147}
+        - {x: 18.5, y: 159}
+        - {x: -71.5, y: 185}
+        - {x: -94.5, y: 185}
+        - {x: -111.5, y: 145}
+        - {x: -111.5, y: 71}
+        - {x: -90.5, y: -19}
+        - {x: -67.5, y: -98}
+        - {x: -36.5, y: -114}
+        - {x: 4.5, y: -149}
+        - {x: 1.5, y: -165}
+        - {x: 9.5, y: -183}
+        - {x: 28.5, y: -185}
+        - {x: 93.5, y: -185}
+        - {x: 108.5, y: -148}
+        - {x: 108.5, y: -121}
+        - {x: 103.5, y: -104}
     outline: []
   spritePackingTag: 
   userData: 

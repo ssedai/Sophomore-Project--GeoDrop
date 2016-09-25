@@ -186,12 +186,13 @@ public class QuizRandomQ1 : MonoBehaviour {
 			break;
 
 		//Arm Naming
-		case "UpperArm2":
-			ans.Add ("Biceps Brachii");
-			ans.Add ("Coracobrachialis");
-			ans.Add ("Brachialis");
-			ans.Add ("Triceps Brachii");
-			ans.Add ("Anconeus");
+		case "UpperArm1":
+			ans.Add ("Texas");
+			ans.Add ("California");
+			ans.Add ("New Mexico");
+			ans.Add ("Ohio");
+			ans.Add ("Michigan");
+			ans.Add ("Austin");
 			break;
 		
 		//Arm Attachment
