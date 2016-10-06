@@ -28,7 +28,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 256
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -62,20 +62,19 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -6.5, y: 114}
-        - {x: -49.5, y: 114}
-        - {x: -76.5, y: 80}
-        - {x: -94.5, y: -6}
-        - {x: -95.5, y: -13}
+      - - {x: -48.5, y: 114}
+        - {x: -70.5, y: 94}
+        - {x: -78.5, y: 66}
+        - {x: -75.5, y: 27}
+        - {x: -90.5, y: 0}
+        - {x: -95.5, y: -27}
         - {x: -95.5, y: -40}
-        - {x: -87.5, y: -47}
-        - {x: -63.5, y: -61}
-        - {x: 0.5, y: -97}
-        - {x: 54.5, y: -106}
-        - {x: 65.5, y: -106}
-        - {x: 67.5, y: -100}
-        - {x: 91.5, y: 62}
-        - {x: 91.5, y: 94}
+        - {x: -85.5, y: -50}
+        - {x: 10.5, y: -107}
+        - {x: 74.5, y: -107}
+        - {x: 92.5, y: 57}
+        - {x: 92.5, y: 96}
+        - {x: -24.5, y: 114}
     outline: []
   spritePackingTag: 
   userData: 

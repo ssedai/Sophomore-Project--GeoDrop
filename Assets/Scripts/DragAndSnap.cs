@@ -83,7 +83,7 @@ public class DragAndSnap : MonoBehaviour {
 	private bool isGuessing = false;  //Boolean to check if body part is dropped in the Object Pane or not
 
 	//Setting up a temporary boolean to mimic an easy/medium difficulty
-	private bool normal = false;
+	private bool normal = true;
 
 
 

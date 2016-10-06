@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 37af194cfeb318345813f795d495e3a0
-timeCreated: 1474739430
+timeCreated: 1475442403
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,7 +28,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 256
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -55,26 +55,25 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 175
-        y: 185
+        y: 180
         width: 169
-        height: 194
+        height: 199
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36.5, y: 47}
-        - {x: 35.5, y: 80}
-        - {x: 34.5, y: 83}
-        - {x: -41.5, y: 95}
-        - {x: -45.5, y: 92}
-        - {x: -66.5, y: -11}
-        - {x: -75.5, y: -70}
-        - {x: -75.5, y: -86}
-        - {x: 3.5, y: -97}
-        - {x: 67.5, y: -97}
-        - {x: 79.5, y: 24}
-        - {x: 79.5, y: 40}
-        - {x: 73.5, y: 42}
+      - - {x: 17.454544, y: 43.781822}
+        - {x: -12.545456, y: 47.781822}
+        - {x: -20.545456, y: 47.781822}
+        - {x: -25.545456, y: 34.781822}
+        - {x: -36.545456, y: -27.218178}
+        - {x: -36.545456, y: -36.218178}
+        - {x: -27.545456, y: -40.218178}
+        - {x: 17.454544, y: -46.218178}
+        - {x: 30.454544, y: -46.218178}
+        - {x: 30.454544, y: -45.218178}
+        - {x: 38.454544, y: 6.781822}
+        - {x: 38.454544, y: 22.781822}
     outline: []
   spritePackingTag: 
   userData: 

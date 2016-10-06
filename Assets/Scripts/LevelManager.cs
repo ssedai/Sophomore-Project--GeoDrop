@@ -160,17 +160,12 @@ public class LevelManager : MonoBehaviour {
 		//Medal Images and Texts from Win Canvas
 		if (statTracking.identifyLevel () != "Q0") {
 			bronze = GameObject.Find ("Bronze Info").GetComponent <Image> ();
-			//bronzeT = GameObject.Find ("Bronze Grade").GetComponent <Text> ();
 			silver = GameObject.Find ("Silver Info").GetComponent <Image> ();
-			//silverT = GameObject.Find ("Silver Grade").GetComponent <Text> ();
 			gold = GameObject.Find ("Gold Info").GetComponent <Image> ();
-			//goldT = GameObject.Find ("Gold Grade").GetComponent <Text> ();
 			platinum = GameObject.Find ("Platinum Info").GetComponent <Image> ();
-			//platinumT = GameObject.Find ("Platinum Grade").GetComponent <Text> ();
 		}
 		//Buttons from Win Canvas
 		restartButton = GameObject.Find("Restart Button").GetComponent <Button>();
-		//nextLevel = GameObject.Find("Next Level Button").GetComponent <Button>();
 		improveScoreButton = GameObject.Find ("Improve Score Button").GetComponent <Button> ();
 
 
@@ -188,7 +183,6 @@ public class LevelManager : MonoBehaviour {
 
 			urlUploadGrade = ("http://secs.oakland.edu/~nferman/uploadgrades.php?level=" + levelName + "&Privatekey=j5G1L23@#"); //Upload's grade of current level
 			urlRetrieveMedals = ("http://secs.oakland.edu/~nferman/retrievemedals.php?level=" + levelName + "&Name=" + userName); //Retrieves the number of medals for current level
-			//urlUploadMedals = ("http://secs.oakland.edu/~nferman/uploadmedals.php?Privatekey=j5G1L23&level=" + levelName + "&Name=" + userName); //Uploads best medal of current level
 
 			ppM = FindObjectOfType <PlayerPrefsManager> (); // //Finds the Player Prefs Manager Script
 			ic = FindObjectOfType <InstructionsCanvas> (); //Finds the Instructions Canvas Script
@@ -202,7 +196,7 @@ public class LevelManager : MonoBehaviour {
 		//NOTE:  Everything referring to grade may not be needed anymore.
 
 
-		//If the user resets, do the following...
+		//Initialize the following code...
 		resetting = false; //Sets the resetting boolean to false (if the game was reset)
 		restartButton.gameObject.SetActive (true); //Activates the restart button (if the game was reset)
 		//nextLevel.gameObject.SetActive (false); //Sets the next level button to false.  May not be needed anymore.
@@ -634,7 +628,6 @@ public class LevelManager : MonoBehaviour {
 	public void restart(){
 		resetting = true; //This boolean prevents a few things (like high scores being uploaded) if the user resets the level
 		levelClear (); //Calcs the score and brings up the Win Canvas to display the score
-
 	}
 
 	//Loads the selected level
@@ -647,18 +640,15 @@ public class LevelManager : MonoBehaviour {
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex+1);
 	}
 		
-	//Increment muscleCount
+	//Increment objCount
 	public void incObjCount(){
 		objCount++;
 	}
 
-	//Adds a number to muscle count
+	//Adds a number to objCount
 	public void addObjCount(int m){
 		objCount += m;
 	}
 
-	//Increments the "Correct First Try" Score.  Not at all needed!!!!
-	public void testScoreAddition(){
-		//fauxTestPoints++;
-	}
+
 }

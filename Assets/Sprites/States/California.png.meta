@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7891b6c87efac60459dd869771a7611d
+guid: 817f7a380d0c7eb4cad7c7b75f54168f
 timeCreated: 1473472121
 licenseType: Free
 TextureImporter:
@@ -28,7 +28,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 256
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -47,11 +47,14 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: California_0
+    - serializedVersion: 2
+      name: California_0
       rect:
         serializedVersion: 2
         x: 191
@@ -61,25 +64,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -6.5, y: 58}
-        - {x: 17.5, y: 147}
-        - {x: 18.5, y: 159}
-        - {x: -71.5, y: 185}
-        - {x: -94.5, y: 185}
-        - {x: -111.5, y: 145}
-        - {x: -111.5, y: 71}
-        - {x: -90.5, y: -19}
-        - {x: -67.5, y: -98}
-        - {x: -36.5, y: -114}
-        - {x: 4.5, y: -149}
-        - {x: 1.5, y: -165}
-        - {x: 9.5, y: -183}
-        - {x: 28.5, y: -185}
-        - {x: 93.5, y: -185}
-        - {x: 108.5, y: -148}
-        - {x: 108.5, y: -121}
-        - {x: 103.5, y: -104}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
